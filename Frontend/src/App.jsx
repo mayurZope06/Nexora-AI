@@ -21,6 +21,16 @@ function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 640);
 
+  // Reset chat state when a user logs in or logs out
+  useEffect(() => {
+    setPrompt("");
+    setReply(null);
+    setCurrThreadId(uuidv1());
+    setPrevChats([]);
+    setNewChat(true);
+    setAllThreads([]);
+  }, [token]);
+
   // Global mouse tracking for the 3D ambient glow effect
   useEffect(() => {
     const handler = (e) => setMousePosition({ x: e.clientX, y: e.clientY });
