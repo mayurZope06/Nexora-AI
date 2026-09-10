@@ -13,11 +13,7 @@
 
 **Nexora AI** is a highly interactive, beautifully designed AI chat application built on the MERN stack. It features a fluid, responsive UI with **Framer Motion** animations and **3D ambient background glows** that react to your mouse movements. It seamlessly connects to the OpenAI API (via a robust Express/Node backend) to deliver intelligent, context-aware conversational capabilities.
 
----
-
-## ✨ Project Live Demo
-
-🚀 **Live Project Link:**  [Nexora AI](https://nexora-ai-official.vercel.app/)
+✨ **Live Project Link:**  [Nexora AI](https://nexora-ai-official.vercel.app/)
 
 ---
 
