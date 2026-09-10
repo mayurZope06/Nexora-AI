@@ -1,6 +1,5 @@
 <div align="center">
-  <img src="/Frontend/public/newlogo.svg" alt="Nexora AI Logo" width="150" height="150" />
-  <h1>✨ Nexora AI ✨</h1>
+  <img src="/Frontend/public/newlogo.svg" alt="Nexora AI Logo" width="250" height="250" /> <!-- <h1>✨ Nexora AI ✨</h1> -->
   <p><strong>Next-Generation AI Chat Assistant with a Stunning 3D UI</strong></p>
   
   [![React](https://img.shields.io/badge/React-19-blue.svg)](https://reactjs.org/)
@@ -9,8 +8,6 @@
   [![MongoDB](https://img.shields.io/badge/MongoDB-Mongoose-47A248.svg)](https://www.mongodb.com/)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 </div>
-
-<br />
 
 ## 🌟 Overview
 
