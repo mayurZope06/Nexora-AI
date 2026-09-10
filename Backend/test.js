@@ -1,7 +1,7 @@
 // import OpenAI from 'openai';
 
 // const openai = new OpenAI({
-//   apiKey: '',
+//   apiKey: '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',
 //   baseURL: 'https://integrate.api.nvidia.com/v1',
 // })
 
@@ -30,7 +30,7 @@ import "dotenv/config";
 
 const client = new OpenAI({
   apiKey:
-    "", // use correct env name
+    "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", // use correct env name
   baseURL: "https://integrate.api.nvidia.com/v1", // 🔥 MUST
 });
 
