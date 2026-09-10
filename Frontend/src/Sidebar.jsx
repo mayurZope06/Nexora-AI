@@ -24,7 +24,7 @@ function Sidebar({ isOpen, onClose, isCollapsed, setIsCollapsed, isMobile }) {
   const getAllThreads = async () => {
     if (!token) return;
     try {
-      const res = await fetch("http://localhost:8080/api/thread", { headers: getAuthHeaders() });
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/thread`, { headers: getAuthHeaders() });
       if (res.status === 401) { logout(); return; }
       const data = await res.json();
       setAllThreads(data.map((t) => ({ threadId: t.threadId, title: t.title })));
@@ -44,7 +44,7 @@ function Sidebar({ isOpen, onClose, isCollapsed, setIsCollapsed, isMobile }) {
   const changeThread = async (id) => {
     setCurrThreadId(id);
     try {
-      const res = await fetch(`http://localhost:8080/api/thread/${id}`, { headers: getAuthHeaders() });
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/thread/${id}`, { headers: getAuthHeaders() });
       if (res.status === 401) { logout(); return; }
       const data = await res.json();
       setPrevChats(data); setNewChat(false); setReply(null);
@@ -57,7 +57,7 @@ function Sidebar({ isOpen, onClose, isCollapsed, setIsCollapsed, isMobile }) {
     e.stopPropagation();
     setDeletingId(id);
     try {
-      const res = await fetch(`http://localhost:8080/api/thread/${id}`, { 
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/thread/${id}`, { 
         method: "DELETE",
         headers: getAuthHeaders()
       });

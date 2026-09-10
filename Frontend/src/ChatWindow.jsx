@@ -45,7 +45,7 @@ function ChatWindow({ onMenuClick, isSidebarCollapsed, setIsSidebarCollapsed, is
       }
       setIsSearchingGlobal(true);
       try {
-        const response = await fetch(`http://localhost:8080/api/search?q=${encodeURIComponent(searchQuery)}`, {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/search?q=${encodeURIComponent(searchQuery)}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
         if (response.status === 401) { logout(); return; }
@@ -68,7 +68,7 @@ function ChatWindow({ onMenuClick, isSidebarCollapsed, setIsSidebarCollapsed, is
     setSearchQuery("");
     setCurrThreadId(id);
     try {
-      const res = await fetch(`http://localhost:8080/api/thread/${id}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/thread/${id}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       if (res.status === 401) { logout(); return; }
@@ -111,7 +111,7 @@ function ChatWindow({ onMenuClick, isSidebarCollapsed, setIsSidebarCollapsed, is
     };
 
     try {
-      const response = await fetch("http://localhost:8080/api/chat", options);
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/chat`, options);
       if (response.status === 401) { logout(); return; }
       const res = await response.json();
       console.log(res);
