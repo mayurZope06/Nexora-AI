@@ -15,6 +15,12 @@
 
 ---
 
+## ✨ Project Live Demo
+
+🚀 **Live Project Link:**  [Nexora AI](https://nexora-ai-official.vercel.app/)
+
+---
+
 ## 🚀 Features
 
 - 💬 **Intelligent Chat Interface**: Communicate seamlessly with advanced AI models.
