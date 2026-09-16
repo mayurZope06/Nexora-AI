@@ -1,7 +1,7 @@
 <div align="center">
   <img src="/Frontend/public/newlogo.svg" alt="Nexora AI Logo" width="250" height="250" /> <!-- <h1>✨ Nexora AI ✨</h1> -->
   <p><strong>Next-Generation AI Chat Assistant with a Stunning 3D UI</strong></p>
-  
+   
   [![React](https://img.shields.io/badge/React-19-blue.svg)](https://reactjs.org/)
   [![Vite](https://img.shields.io/badge/Vite-8-646CFF.svg)](https://vitejs.dev/)
   [![Express](https://img.shields.io/badge/Express-5.2-lightgrey.svg)](https://expressjs.com/)
